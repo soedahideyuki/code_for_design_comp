@@ -30,7 +30,53 @@
 <body>
   <main>
     <!-- ************************************************ ナビゲーションバー開始 -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand my_navbar_brand">
+          <img class="img-fluid navbar_brand_logo" src="img/site_logo.png" alt="サイトアイコン"><span>SAMURAI KITCHEN</span>
+        </a>
 
+        <!-- ハンバーガーメニュー　スマホ画面 -->
+        <div class="navbar-toggler hamburger_menu" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aeia-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <input type="checkbox" id="hamburger_btn_check">
+            <label for="hamburger_btn_check" class="hamburger_btn">
+              <img  class="btn_open" src="img/button_open.png" alt="ナビゲーションバーのボタン">
+              <img src="img/button_close.png" alt="ナビゲーションバーのボタン" class="btn_close">
+            </label>
+        </div>
+        <!-- ここまで -->
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="#" class="nav-link my_nav_link my-2" aria-current="page">HOME</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a href="#about" class="nav-link my_nav_link my-2" >ABOUT US</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a href="#gallery" class="nav-link my_nav_link my-2">GALLERY</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a href="#menu" class="nav-link my_nav_link my-2">MENU</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a href="#review" class="nav-link my_nav_link my-2">CUSTOMER REVIEWS</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a href="#access" class="nav-link my_nav_link my-2">ACCESS</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- ************************************************ ナビゲーションバー終了 -->
 
     <!-- ************************************************ カルーセル開始 -->
