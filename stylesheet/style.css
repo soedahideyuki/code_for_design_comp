@@ -18,8 +18,17 @@ p {
   font-size: 14px;
 
 }
-
-
+.section_title{
+  font-size: 36px;
+  font-weight: 600;
+}
+.section_title::after{
+  display: block;
+  font-size: 14px;
+  padding: 16px 0 16px;
+  width: 100px;
+  border-bottom: solid 1px #000000;
+}
 
 /* ----------------------------------------------- ナビゲーションバー */
 .navbar_brand_logo{
@@ -63,13 +72,45 @@ p {
 
 
 /* ----------------------------------------------- カールセル */
+.my_carousel_caption{
+  font-size: 52px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Lora',serif;
+  line-height: 1.5em;
+}
+.my_carousel_caption::before{
+  content: url(../img/logoSymbol_White.png);
+  display: block;
+}
 
-
+@media  screen and(max-width:375px) {
+  .my_carousel_caption{
+    font-size: 27px;
+  }
+}
+.carousel-item{
+  height: 32rem;
+}
+.carousel-item > img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
 
 
 
 /* ----------------------------------------------- アバウト */
-
+.about::after{
+  content:"私たちについて";
+}
+.about_us_bg{
+  background-color: #FFE6A5;
+}
 
 
 
